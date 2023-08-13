@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+<!--    &lt;!&ndash;  通知  &ndash;&gt;-->
+<!--    <bean id="myAdvice" class="com.example.goods.advice.MyAdvice" />-->
+<!--    <bean id="myAdvice2" class="com.example.goods.advice.MyAdvice2" />-->
+<!--    &lt;!&ndash;  开启自动代理，即自动为aspectj切面匹配的类创建代理,proxy-target-class=true指定代理方式为cglib  &ndash;&gt;-->
+<!--    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>-->
+<!--    &lt;!&ndash;  aop配置  &ndash;&gt;-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;  切入点  &ndash;&gt;-->
+<!--        <aop:pointcut id="myPointcut" expression="execution(* com.example.goods.controller.TestController.test*(..))"/>-->
+<!--        &lt;!&ndash;  单个切面定义  &ndash;&gt;-->
+<!--        <aop:advisor advice-ref="myAdvice" pointcut-ref="myPointcut"></aop:advisor>-->
+<!--        &lt;!&ndash;  多个切面定义  &ndash;&gt;-->
+<!--        <aop:aspect ref="myAdvice2">-->
+<!--            <aop:before method="before2" pointcut-ref="myPointcut"></aop:before>-->
+<!--            <aop:after-returning method="afterReturning" pointcut-ref="myPointcut" returning="retValue"></aop:after-returning>-->
+<!--            <aop:after-throwing method="afterThrowing" pointcut-ref="myPointcut" throwing="e"></aop:after-throwing>-->
+<!--            <aop:after method="after" pointcut="execution(* com.example.goods.controller.TestController.test*(..))"></aop:after>-->
+<!--            <aop:around method="arround1" pointcut="execution(* com.example.goods.controller.TestController.test*(..))"></aop:around>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+</beans>
