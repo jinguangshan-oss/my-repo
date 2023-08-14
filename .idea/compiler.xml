@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="users" />
         <module name="gateway" />
-        <module name="amazon" />
         <module name="order" />
         <module name="goods" />
         <module name="pay" />
