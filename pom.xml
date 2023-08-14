@@ -8,6 +8,8 @@
     <artifactId>amazon</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>pay</module>
         <module>order</module>

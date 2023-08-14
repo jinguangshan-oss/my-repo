@@ -9,6 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <packaging>jar</packaging>
+
     <groupId>com.example</groupId>
     <artifactId>order</artifactId>
     <version>0.0.1-SNAPSHOT</version>
