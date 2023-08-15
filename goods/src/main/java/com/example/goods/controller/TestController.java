@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.UUID;
@@ -78,6 +79,14 @@ public class TestController {
     @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRED)
     public String test1(){
         return "hello1";
+    }
+
+    @PostConstruct
+    public void testJstack() throws InterruptedException {
+        while (true){
+            Thread.sleep(1000);
+            System.out.printf("testJstack");
+        }
     }
 
 }
