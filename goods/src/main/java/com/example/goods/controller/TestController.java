@@ -81,12 +81,12 @@ public class TestController {
         return "hello1";
     }
 
-    @PostConstruct
-    public void testJstack() throws InterruptedException {
-        while (true){
-            Thread.sleep(1000);
-            System.out.printf("testJstack");
-        }
-    }
+//    @PostConstruct
+//    public void testJstack() throws InterruptedException {
+//        while (true){
+//            Thread.sleep(1000);
+//            System.out.printf("testJstack");
+//        }
+//    }
 
 }
