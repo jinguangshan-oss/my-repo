@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.users.dao.UserMapper">
+
+    <resultMap id="userResultMap" type="com.example.users.type.User">
+        <!-- 配置字段映射关系，数据库字段名与实体类属性名的对应关系 -->
+        <result property="userName" column="user_name"/>
+        <result property="id" column="id"/>
+        <result property="mail" column="mail"/>
+        <result property="userName" column="user_name"/>
+        <result property="phone" column="phone"/>
+    </resultMap>
+
+    <select id="select" resultMap="userResultMap">
+        select * from user
+        <where>
+            <if test="param.id !=null">
+                and id = #{param.id}
+            </if>
+            <if test="param.userName !=null">
+                and user_name = #{param.userName}
+            </if>
+            <if test="param.mail !=null">
+                and mail = #{param.mail}
+            </if>
+            <if test="param.phone !=null">
+                and phone = #{param.phone}
+            </if>
+        </where>
+    </select>
+
+
+    <!-- 插入用户 -->
+    <insert id="insert" parameterType="com.example.users.type.User">
+        INSERT INTO user (user_name, password, mail, phone)
+        VALUES (#{param.userName}, #{param.password}, #{param.mail}, #{param.phone})
+    </insert>
+
+</mapper>

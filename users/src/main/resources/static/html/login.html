@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body style="background-image: url(../image/IW2.jpg);">
+    <div class="login-container" >
+        <h2>User Login</h2>
+        <form id="myForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="用户名" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="密码" required><br><br>
+            <button type="submit">登录</button>
+        </form>
+        <h2>没有账号？请点击注册</h2>
+        <button id="registerButton">注册</button>
+        <script src="../js/login.js" type="module"></script>
+    </div>
+</body>
+</html>

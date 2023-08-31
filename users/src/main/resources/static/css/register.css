@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    flex: auto;
+}
+
+#register-container {
+    /*background-color: transparent; /* 设置为透明背景 */
+    background-color: rgba(255, 255, 255, 0.7); /* 使用 rgba() 函数设置半透明的白色背景 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 上下居中 */
+    left: 50%; /* 左右居中 */
+    transform: translate(-50%, -50%); /* 平移调整位置 */
+}
+
+#registrationForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#registrationForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#registrationForm button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#registrationForm button:hover {
+    background-color: #0056b3;
+}

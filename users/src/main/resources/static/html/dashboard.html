@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Chat Box</title>
+    <title>Dashboard</title>
+</head>
+<body style="background-image: url(../image/robot4.png);">
+    <div class="nav-container">
+        <a class="nav-link" href="login.html">主页</a>
+        <a class="nav-link" href="register.html">联系</a>
+        <a class="nav-link" href="dashboard.html">关于</a>
+    </div>
+    <div class="chat-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>This is your private dashboard page.</p>
+        <button id="userMsgButton">查看当前用户信息</button>
+        <div class="chat-box" id="chatBox"></div>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button id="sendButton">发送</button>
+        <!-- 添加一个按钮 -->
+        <button id="clearButton">清除记忆</button>
+    </div>
+</body>
+<script src="../js/dashboard.js" type="module"></script>
+<script src="../js/chat.js" type="module"></script>
+</html>
